@@ -38,6 +38,23 @@ module.exports.sockets = {
   * via port 6379                                                            *
   *                                                                          *
   ***************************************************************************/
+  adapter: 'redis',
+
+  /***************************************************************************
+  *                                                                          *
+  * The following values are optional, if no options are set a redis         *
+  * instance running on localhost is expected. Read more about options at:   *
+  * https://github.com/visionmedia/connect-redis                             *
+  *                                                                          *
+  *                                                                          *
+  ***************************************************************************/
+  //redis://redistogo:232ce4c59895345c5182c55e9f138d0f@spadefish.redistogo.com:9131/
+  host: 'spadefish.redistogo.com',
+  port: 9131,
+  user: 'redistogo',
+  // ttl: <redis session TTL in seconds>,
+  db: 0,
+  pass: '232ce4c59895345c5182c55e9f138d0f'
   // adapter: 'memory',
 
   //
